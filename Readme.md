@@ -1,4 +1,4 @@
-# T-Rex NVIDIA GPU miner (Ethash / Kawpow / Octopus / MTP)
+# lolMiner AMD GPU miner 
 Original repository
 https://github.com/Lolliedieb/lolMiner-releases.git
 This image build [lolMiner] lolMiner 1.18a from https://github.com/Lolliedieb/lolMiner-releases
