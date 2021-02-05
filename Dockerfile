@@ -16,9 +16,8 @@ RUN apt-get upgrade -y
 # Workaround on error: libOpenCL.so.1: cannot open shared object file: No such file or directory
 RUN apt-get purge ocl-icd-opencl-dev; apt-get autoremove; apt-get install ocl-icd-opencl-dev wget -y
 
-RUN wget https://github.com/Lolliedieb/lolMiner-releases/releases/download/1.18/lolMiner_v1.18a_Lin64.tar.gz
-
-RUN tar -xzf lolMiner_v1.18a_Lin64.tar.gz
-RUN mv 1.18a/lolMiner /root
+RUN wget https://github.com/Lolliedieb/lolMiner-releases/releases/download/1.21/lolMiner_v1.21_Lin64.tar.gz
+RUN tar -xzf lolMiner_v1.21_Lin64.tar.gz
+RUN mv 1.21/lolMiner /root
 
 ENTRYPOINT ./lolMiner --algo ETHASH --pool $SERVER --user $ETH_ADDRESS $@
