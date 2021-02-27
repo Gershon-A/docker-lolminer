@@ -1,3 +1,4 @@
+![Bild Docker image workflow](https://github.com/Gershon-A/docker-lolminer/actions/workflows/docker-image.yml/badge.svg)
 # lolMiner AMD GPU miner 
 Original repository
 https://github.com/Lolliedieb/lolMiner-releases.git
