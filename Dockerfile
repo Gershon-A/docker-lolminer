@@ -17,7 +17,7 @@ RUN apt-get upgrade -y
 RUN apt-get purge ocl-icd-opencl-dev; apt-get autoremove; apt-get install ocl-icd-opencl-dev wget -y
 
 RUN wget https://github.com/Lolliedieb/lolMiner-releases/releases/download/1.26/lolMiner_v1.26_Lin64.tar.gz
-RUN tar -xzf lolMiner_v1.24a_Lin64.tar.gz
+RUN tar -xzf lolMiner_v1.26_Lin64.tar.gz
 RUN mv 1.26/lolMiner /root
 
 ENTRYPOINT ./lolMiner --algo ETHASH --pool $SERVER --user $ETH_ADDRESS $@
